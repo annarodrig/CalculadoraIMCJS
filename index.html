@@ -15,17 +15,22 @@
         <div>
             <form action="calculadoraIMC">
                 <label for="peso">Digite seu peso:</label>
-                <input type="number" id="peso">
+                <input type="number" id="peso" name="peso">
+
                 <label for="altura">Digite sua altura:</label>
-                <input type="number" id="altura">
-                <button id="calcula" >Calcular meu IMC</button>
+                <input type="number" id="altura" name="altura">
+
+                <button id="calcula" type="button" >Calcular meu IMC</button>
             </form>
         </div>
-        <div class="divCalculos" hidden="true" >
-            <h2>Seu IMC é:</h2>
-            <h3 id="resultadoIMC" ></h3>
-            <h2>Sua situação:</h2>
-            <h3 id="resultadoSituacao" ></h3>
+        <div class="divCalculos" hidden="true">
+
+            <h3>Seu IMC é:</h3>
+            <p id="resultadoIMC" ></p>
+
+            <h3>Sua situação:</h3>
+            <p id="resultadoSituacao" ></p>
+            
         </div>
     </section>
     <script src="index.js"></script>
