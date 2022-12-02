@@ -9,28 +9,35 @@
 </head>
 <body>
     <section class="container" >
-        <div>
+        <div class="container-title">
+
             <h1>Calculadora IMC</h1>
+            
         </div>
         <div>
-            <form action="calculadoraIMC">
+            <form class="container-form">
+
                 <label for="peso">Digite seu peso:</label>
-                <input type="number" id="peso" name="peso">
+                <input type="number" id="peso" name="peso" placeholder="90kg">
 
                 <label for="altura">Digite sua altura:</label>
-                <input type="number" id="altura" name="altura">
+                <input type="text" id="altura" name="altura" placeholder="1.75m">
 
-                <button id="calcula" type="button" >Calcular meu IMC</button>
+                <button id="calcula" >Calcular meu IMC</button>
             </form>
         </div>
-        <div class="divCalculos" hidden="true">
+        <div class="container-resultado" id="divCalculos" hidden="true">
 
-            <h3>Seu IMC é:</h3>
-            <p id="resultadoIMC" ></p>
+            <div>            
+                <h3>Seu IMC é:</h3>
+                <p id="resultadoIMC" ></p>
+            </div>
 
-            <h3>Sua situação:</h3>
-            <p id="resultadoSituacao" ></p>
-            
+            <div>
+                <h3>Sua situação:</h3>
+                <p id="resultadoSituacao" ></p>
+            </div>
+
         </div>
     </section>
     <script src="index.js"></script>
